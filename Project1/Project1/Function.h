@@ -16,5 +16,6 @@ void print_vector(vector* v);
 vector sum(vector* v1, vector* v2);
 vector prod(vector* v1, vector* v2);
 vector subtract(vector* v1, vector* v2);
-
+void read_f(char*f, vector* v1, vector* v2);
+void write_f(char* file, vector* res);
 #endif 
