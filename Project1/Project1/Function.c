@@ -69,12 +69,17 @@ void read_f(char *file, vector* v1, vector* v2) {
 	fclose(f);
 	return;
 }
-void write_f(char* file, vector* res) {
+void write_f(char* file, vector* res, char* type) {
 	FILE *f = fopen(file, "a+");
-	fprintf(f,"Ответ: ");
+	fprintf(f,"Ответ: %s ", type);
 	for (int i = 0; i < res->n; i++) {
 		fprintf(f, "%.2lf ", res->cord[i]);
 	}
 	fprintf(f,"\n");
+	fclose(f);
 }
 
+void clean_f(char* file) {
+	FILE* f = fopen(file, "w");
+	fclose(f);
+}

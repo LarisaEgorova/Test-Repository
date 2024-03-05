@@ -18,4 +18,6 @@ vector prod(vector* v1, vector* v2);
 vector subtract(vector* v1, vector* v2);
 void read_f(char*f, vector* v1, vector* v2);
 void write_f(char* file, vector* res);
+void clean_f(char* file);
+
 #endif 
