@@ -4,6 +4,7 @@
 #include <locale.h>
 #include <string>
 #include <exception>
+#include <fstream>
 
 using namespace std;
 
@@ -20,8 +21,10 @@ struct vector {
 	vector operator -(const vector&);
 	double operator *(const vector&);
 	vector& operator =(const vector&);
+
 };
 
 istream& operator >>(istream& in, vector& v);
 ostream& operator <<(ostream& out, const vector& v);
+
 
