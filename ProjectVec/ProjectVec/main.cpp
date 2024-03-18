@@ -3,6 +3,7 @@
 int main() {
 
 	setlocale(LC_ALL, "ru");
+
 	vector v1, v2, res;
 	double res1;
 	while (true) {
